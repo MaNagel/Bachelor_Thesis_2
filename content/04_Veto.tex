@@ -1,0 +1,80 @@
+\chapter{Effect of Vetoing the masked Regions}%\label{make}
+
+The easiest way to exclude the effect of the masked regions, is to veto the effected areas in the detector based in different physics objects.
+Those strategies will be described in the following chapter.
+
+\section{Monotop Event Selection}
+
+Events passing the monotop event selection are required to have at least one large-R jet with $p_{\text{T}} > \SI{250}{\giga\electronvolt}$, $m > \SI{50}{\giga\electronvolt}$ and in order to be calibrated $|\eta| < 2.0$.
+In Addition $E_{\mathrm{T}}^{\mathrm{miss}} > \SI{200}{\giga\electronvolt}$ and $|\Delta\phi(E_{\mathrm{T}}^{\mathrm{miss}}, p_{\text{T}})| > \frac{\pi}{2}$ is required to fulfil the selection.
+
+\section{Performance of different Options}
+
+The following criteria are based on geometrical areas in the $\eta$-$\phi$-plane.
+The distance of the jet axes in $\eta$ and $\phi$ to the center of a masked module will be referenced as $\Delta\phi$ and $\Delta\eta$.
+The distance of $E_{\mathrm{T}}^{\mathrm{miss}}$ to the center of a masked module is referenced as $\Delta\phi_{\mathrm{miss}}$.
+
+\subsection{Vetoing on large-R jets}
+
+For vetoing based on large-R jets, there will be two options considered.
+First is to veto just on the leading large-R jet, as the second is to veto on all large-R jets.
+The veto is based in the position of the jet axis and every event with at least one jet pointing into the affected area will be rejected.
+A large-R jet is defined to point into a affected region, when $\Delta\phi < 1.05$ and 1.0  $\Delta\eta < 1.45$.
+In figure \ref{leadingLargeCut} are the leading large-R jet $\eta$-$\phi$ distributions given, for those events that have been rejected by the vetoing.
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{./Plots/hash2DLeadingFatjet_.pdf}
+		\caption{$\eta$-$\phi$-plane of the leading large-R jets which are contained in events, rejected by vetoing the leading large-R jets with $\Delta\phi < 1.05$ and 1.0  $\Delta\eta < 1.45$.}
+	\end{subfigure}
+	\begin{subfigure}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{./Plots/hash2DcutAllFatjet_.pdf}
+		\caption{$\eta$-$\phi$-plane of the leading large-R jets which are contained in events, rejected by vetoing the leading large-R jets with $\Delta\phi < 1.05$ and 1.0  $\Delta\eta < 1.45$.}
+	\end{subfigure}
+	\caption{}\label{leadingLargeCut}
+\end{figure}
+
+\subsection{Vetoing on small-R jets}
+
+Analogously to the veto on the large-R jets, the veto on the small-R jets will be defined.
+For the rejection $\Delta\phi < 0.45$ and 1.0  $\Delta\eta < 0.85$ is required.
+In figure \ref{leadingSmallCut} are the leading large-R jet $\eta$-$\phi$ distributions given, for those events that have been rejected by the vetoing.
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{./Plots/hash2DLeadingSmalljet_.pdf}
+		\caption{$\eta$-$\phi$-plane of the leading large-R jets which are contained in events, rejected by vetoing the leading small-R jets with $\Delta\phi < 0.45$ and 1.0  $\Delta\eta < 0.85$.}
+	\end{subfigure}
+	\begin{subfigure}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{./Plots/hash2DcutAllSmalltjet_.pdf}
+		\caption{$\eta$-$\phi$-plane of the leading large-R jets which are contained in events, rejected by vetoing the leading small-R jets with $\Delta\phi < 0.45$ and 1.0  $\Delta\eta < 0.85$.}
+	\end{subfigure}
+	\caption{}\label{leadingSmallCut}
+\end{figure}
+
+\subsection{Vetoing on $E_{\mathrm{T}}^{\mathrm{miss}}$}
+
+Another possibility to veto on the masked regions is to use the $E_{\mathrm{T}}^{\mathrm{miss}}$.
+In this case a event will be rejected, when $\Delta\phi_{\mathrm{miss}} < 0.45$ is satisfied.
+The resulting $\phi$-distributions of $E_{\mathrm{T}}^{\mathrm{miss}}$ and leading large-R jet $p_{\text{T}}$ are given in figure \ref{CutMET}.
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{./Plots/hashCutMETMETPhi_.pdf}
+		\caption{$\phi$-distribution of $E_{\mathrm{T}}^{\mathrm{miss}}$ after rejecting events with $\Delta\phi_{\mathrm{miss}} < 0.45$.}
+	\end{subfigure}
+	\begin{subfigure}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{./Plots/hashCutMETljetPhi_.pdf}
+		\caption{$\phi$-distribution of the leading large-R jets after rejecting events with $\Delta\phi_{\mathrm{miss}} < 0.45$.}
+	\end{subfigure}
+	\caption{}\label{CutMET}
+\end{figure}
+
+\subsection{Contemplation of Vetos on Vector Like Quark Signal}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{./Plots/CutEfficiencyVLQ_.pdf}
+	\caption{}
+	\label{}
+\end{figure}
